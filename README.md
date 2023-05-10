@@ -1,3 +1,3 @@
 # Site-de-Supermercado
 
-Projeto contrução de site
+Projeto construção de site
