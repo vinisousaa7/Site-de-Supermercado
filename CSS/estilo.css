@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+
+.favcon {
+    height: 2px;
+}
+
+#baner {
+    height: 600px;
+    background-image: url('../imagens/maesbanner2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.cabecalho img {
+    height: 90px;
+    width: 90px;
+}
+
+.cabecalho  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho h1{
+    font-size: 2.5em;
+}
+
+
+.cabecalho nav {
+   display: flex;
+   width: 90%;
+   margin-top: 15px;
+}
+
+.cabecalho nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #253237;
+    height: 50px;
+    border-radius: 50px;
+    border-bottom: solid 2px blue;
+}
+
+.cabecalho nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cabecalho nav ul li a:hover {
+    transition: 1s;
+    color: #5f9ae8  ;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.banner h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #4075ba;
+    font-size: 1.9em;
+}
+
+.banner p {
+    color: #4B5043;
+    font-size: 1em;
+}
+
+.produtos h2{
+    font-size: 1.2em;
+    margin-left: 1px;
+    color: #074fac;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.card {
+    width: 350px;
+    border: solid  1px #9fb9ba;
+    height: 400px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 50%;
+    height: 180px;
+}
+
+.sessao {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+    flex-wrap: wrap;
+}
+
+.card p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    margin: 15px 0;
+}
+
+.card h4 {
+    text-decoration: line-through;
+    color: rgba(224, 52, 52, 0.688);
+    margin-bottom: 8px;
+}
+
+.card h3{
+    font-size: 1.5em;
+    color: #074fac;
+}
+
+.card button {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #253237;
+    color: #fff;
+    font-weight: 700;
+}
+
+.card button:hover {
+    background-color: #074fac;
+    cursor: pointer;
+    transition: 1s;
+    border: 1px solid #074fac;
+}
+
+#sobre {
+    height: 800px;
+    background-color: #4075ba;
+}
+
+#sobre form, fieldset {
+    height: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre label{
+    font-family: cursive;
+    margin: 10px 0px;
+    font-size: 1.3em;
+}
+
+#sobre input{
+    height: 30px;
+    width: 300px;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+}
+
+#sobre h3 {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#sobre input::placeholder {
+    text-align: center;
+    color: #074fac;
+    font-size: 1.1em;
+}
+
+
+fieldset textarea {
+    margin: 20px 0px;
+    border-radius: 15px;
+    width: 350px;
+}
+
+fieldset button {
+    width: 50%;
+    margin: 10px 0px;
+    height: 35px;
+    border-radius: 20px;
+    border: solid 1px #fff;
+
+}
+
+fieldset button:hover {
+    background-color: #0559c6;
+    border: 1px solid black;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.participantes {
+    height: 50px;
+    background-color: rgb(242, 242, 242);
+    align-items: center;
+}
+
+.participantes ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    line-height: 50px;
+}
+
+footer p {
+    text-align: center;
+    color: #074fac;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#menub {
+    display: none;
+}
+
+@media (max-width: 780px) {
+
+    .participantes{
+        background-color: rgb(242, 242, 242);
+        height: 300px;
+    }
+    .participantes ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produtos h2 {
+        margin: 15px 10px;
+    }
+
+    .banner {
+        margin: 20px 0px;
+    }
+
+    #baner {
+        background-image: url('../imagens/Story\ instagram\ dia\ das\ mães\ Rosa.png');
+        background-position: center;
+    }
+
+    .cabecalho h1{
+        display: none;
+    }
+
+    .cabecalho {
+        height: 450px;
+        justify-content: space-evenly;
+    }
+
+    .cabecalho nav {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+    }
+
+    .cabecalho nav ul {
+        background-color: white;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho nav ul li{
+        margin: 5px 0px;
+        width: 100%;
+        background-color: #9fb9ba;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .cabecalho nav ul li a{
+        color: white;
+        font-weight: 700;
+    }
+
+    .cabecalho img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    #menub {
+        display: block;
+        height: 35px;
+        width: 35px;
+    }
+
+}
